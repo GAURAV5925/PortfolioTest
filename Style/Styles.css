@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.logo,.collapse{
+    position: relative;
+    left: 35px;
+}
+
+.search{
+    position: relative;
+    right: 75px;
+}
+
+
+.nav-item:hover{
+    font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container{
+    position: relative;
+    top: 50px;
+}
+
+.profile-photo{
+    height: 350px;
+    border-radius: 50%;
+}
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    color: white;
+    padding: 15px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Developer";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #212529;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid white;
+    }
+}
+
+@keyframes words {
+    0%,50%{
+        content: "Gaurav Jha";
+    }
+    51%,100%{
+        content: "Frontend Developer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+.main-para{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    position: relative;
+    top: 15px;
+    text-align: justify;
+   
+}
+
+.stack-table{
+    color: white;
+}
+
+.card{
+    height: 150px;
+    background-color: rgba(125, 0, 0, 0.5);
+}
+
+.cb1{
+    background-color: rgba(225, 225, 225, 0.5);
+}
+
+.heading{
+    font-size: 25px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.stack-logo{
+    width: 60px;
+}

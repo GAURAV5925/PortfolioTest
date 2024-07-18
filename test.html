@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+
+        <script src="./script.js"></script>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+
+    <div class="container-lg col-sm-7">
+
+        <!--Sign Up FORM-->
+
+        <div class="border border-danger container-lg col-sm-10 bg-light rounded-5">
+
+            <h2 class="text-danger text-center log-tit m-3">Registration Form</h2>
+            <form>
+                <div class="form-group mb-3">
+                    <label for="name" class="m-1">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="eg: Gaurav Jha">
+                    
+                </div>
+
+
+                <div class="form-group mb-3">
+                    <label for="dob" class="m-1">Date of Birth</label>
+                    <input type="date" id="dob" class="form-control">
+                </div>
+
+
+                <div class="form-group mb-3">
+                    <label for="mobile" class="m-1">Mobile Number</label>
+                    <input type="tel" id="mobile" class="form-control" pattern="[1-9]{1}[0-9]{9}"
+                        placeholder="eg: 1234567890">
+                </div>
+
+
+                <div class="form-group mb-3">
+                    <label for="email" class="m-1">User ID/Email ID</label>
+                    <input type="text" id="email" class="form-control">
+
+                    <div class="form-group mb-3">
+                        <label for="pass" class="m-1">Password</label>
+                        <input type="password" id="pass" class="form-control">
+                        <small class="form-text text-muted">Please Include 1 Lower Character 1 Upper Caharacter, 1
+                            Digit & 1
+                            Special Character <br>Password length should be Minimum 8 Character</small>
+                    </div>
+
+
+                    <div class="form-group mb-3">
+                        <label for="pass" class="m-1"> Confirm Password</label>
+                        <input type="password" id="pass" class="form-control">
+                    </div>
+
+
+
+                    <div class="mb-3 form-check"><input type="checkbox" id="logged" class="form-check-input">
+                        <label for="logged" class="form-check-label">I Agree with All T&C</label>
+                    </div>
+
+
+                    <a href="SignUp.html"
+                        class="link-danger link-offset-2 link-offset-3-hover link-underline link-underline link-underline-opacity-0 link-underline-opacity-80-hover text-center">
+                        Reset</a>
+
+                    <button type="submit" class="btn btn-danger m-1 "> Register </button>
+
+            </form>
+        </div>
+
+        </div>
+
+
+
+</body>
+
+</html>
